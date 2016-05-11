@@ -7,4 +7,10 @@ Square::Square(double side)
         throw "Error";
 }
 
+std::ostream& operator<<(std::ostream& out, 
+ const Square& t)
+ {
+     //todo: print square
+     return *this;
+ }
 

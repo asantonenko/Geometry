@@ -1,6 +1,8 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
+#include <iostream>
+
 class Square
 {
     double side;
@@ -12,5 +14,8 @@ public:
     double area() const
     { return side*side;}
 };
+
+std::ostream& operator<<(std::ostream& out, 
+ const Square& t);
 
 #endif // SQUARE_H

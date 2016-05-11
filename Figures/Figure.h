@@ -10,6 +10,5 @@ public:
     {
     }
 };
-//asantonenko@gmail.com
 
 #endif // FIGURE_H

@@ -2,8 +2,9 @@
 #define SQUARE_H
 
 #include <iostream>
+#include "Figure.h"
 
-class Square
+class Square : public Figure
 {
     double side;
 public:
@@ -13,9 +14,9 @@ public:
     { return side*4;}
     double area() const
     { return side*side;}
+    virtual void print(std::ostream& out)const;
 };
 
-std::ostream& operator<<(std::ostream& out, 
- const Square& t);
+
 
 #endif // SQUARE_H

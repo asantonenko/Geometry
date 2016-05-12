@@ -2,8 +2,9 @@
 #define TRIANGLE_H
 
 #include <iostream>
+#include "Figure.h"
 
-class Triangle
+class Triangle : public Figure
 {
 public:
     Triangle();
@@ -11,13 +12,10 @@ public:
     double perimeter() const
     { return a+b+c;}
     double area() const;
-    friend std::ostream& operator<<
-      (std::ostream& out, const Triangle& t);
+    virtual void print(std::ostream& out)const;  
 private:
     double a,b,c;
 };
 
-std::ostream& operator<<(std::ostream& out, 
- const Triangle& t);
 
 #endif // TRIANGLE_H

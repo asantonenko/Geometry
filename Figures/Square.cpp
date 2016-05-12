@@ -7,10 +7,10 @@ Square::Square(double side)
         throw "Error";
 }
 
-std::ostream& operator<<(std::ostream& out, 
- const Square& t)
+void Square::print(std::ostream& out)const
  {
-     //todo: print square
-     return out;
+     out << "Square " <<side <<"x" <<side 
+         <<" p=" <<perimeter() 
+         <<" s=" <<area();
  }
 

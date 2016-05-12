@@ -18,14 +18,12 @@ double Triangle::area() const
     return sqrt(p*(p-a)*(p-b)*(p-c));
 }
 
-ostream& operator<<(ostream& out, 
- const Triangle& t)
+void Triangle::print(std::ostream& out)const
 {
-    out <<"Triangle" <<" a=" <<setw(5)<<t.a
-                     <<" b=" <<setw(5)<<t.b
-                     <<" c=" <<setw(5)<<t.c
-        <<" p=" <<setw(5) <<t.perimeter()
-        <<" s=" <<setw(10)<<t.area();
-    return out;
+    out <<"Triangle" <<" a=" <<setw(5)<<a
+                     <<" b=" <<setw(5)<<b
+                     <<" c=" <<setw(5)<<c
+        <<" p=" <<setw(5) <<perimeter()
+        <<" s=" <<setw(10)<<area();
 }
 

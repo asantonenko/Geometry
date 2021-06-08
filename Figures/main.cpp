@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    //Данная строка инициализирует генератор случайных чисел
+    //Р”Р°РЅРЅР°СЏ СЃС‚СЂРѕРєР° РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ РіРµРЅРµСЂР°С‚РѕСЂ СЃР»СѓС‡Р°Р№РЅС‹С… С‡РёСЃРµР»
     srand(time(NULL));
 	/*vector<Triangle> figures;
     int number;
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
     /*Figure * f = new Triangle (3,4,5);
     cout <<f->area() <<endl;*/
 
-    //Вектор с фигурами
+    //Р’РµРєС‚РѕСЂ СЃ С„РёРіСѓСЂР°РјРё
     vector<Figure*> figures;
 
     int number;
